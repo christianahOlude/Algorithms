@@ -17,15 +17,13 @@ class Test(TestCase):
         self.assertEqual(expected, actual)
 
     def test_is_prime(self):
-        number = 13
-        num = 13
+        number = 11
         expected = True
-        actual = is_prime(number, num)
+        actual = is_prime(number)
         self.assertEqual(expected, actual)
 
     def test_is_not_prime(self):
-        number = 12
-        num = 10
+        number = 6
         expected = False
-        actual = is_prime(number, num)
+        actual = is_prime(number)
         self.assertEqual(expected, actual)
