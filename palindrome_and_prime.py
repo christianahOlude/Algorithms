@@ -6,13 +6,12 @@ def is_palindrome(number):
     else:
         return False
 
-def is_prime(number):
+
+def is_prime(number: int):
     if number > 1:
         for i in range(2, number):
             if (number % i) == 0:
                 return False
-        else:
             return True
-    return None
-
-
+    else:
+        return None
