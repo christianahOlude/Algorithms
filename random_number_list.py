@@ -10,7 +10,7 @@ def length_of_list(my_list):
     return counter
 
 def sum_of_even_position(my_list):
-    even_position = my_list[1::2]
+    even_position = my_list[0::2]
 
     summ = 0
     for num in even_position:
@@ -43,7 +43,15 @@ def calculate_average(my_list):
     return summ / counter
 
 def largest_number(my_list):
-    return max(my_list)
+    maximum = my_list[0]
+    for num in my_list:
+        if num > maximum:
+            maximum = num
+    return maximum
 
 def smallest_number(my_list):
-    return min(my_list)
+    minimum = my_list[0]
+    for num in my_list:
+        if num < minimum:
+            minimum = num
+    return minimum
