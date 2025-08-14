@@ -27,7 +27,12 @@ def sum_of_odd_position(my_list):
     return summ
 
 def multiply_of_third_position(my_list):
-    return my_list[2] * my_list[5] * my_list[8]
+    third_position = my_list[::3]
+
+    multiple = 1
+    for num in third_position:
+        multiple *= num
+    return multiple
 
 def calculate_average(my_list):
     summ = 0

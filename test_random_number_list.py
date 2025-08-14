@@ -17,19 +17,27 @@ class Test(TestCase):
         print(actual)
 
     def test_sum_of_even_position(self):
-        number = [1,2,3,4,5]
+        number = [0,1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+                  11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+                  21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+                  31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
+                  41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
         actual = sum_of_even_position(number)
-        self.assertEqual(6, actual)
+        self.assertEqual(625, actual)
 
     def test_sum_of_odd_position(self):
-        number = [1,2,3,4,5]
+        number = [0,1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+                  11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+                  21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+                  31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
+                  41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
         actual = sum_of_odd_position(number)
-        self.assertEqual(9, actual)
+        self.assertEqual(650, actual)
 
     def test_multiply_of_third_position(self):
         number = [1,2,3,4,5,6,7,8,9,10]
         actual = multiply_of_third_position(number)
-        self.assertEqual(162, actual)
+        self.assertEqual(280, actual)
 
     def test_calculate_average(self):
         number = [1,2,3,4,5,6,7,8,9,10]
